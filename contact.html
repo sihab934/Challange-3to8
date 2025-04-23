@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Point</title>
+    <!--Link tailwind css-->
+    <link rel="stylesheet" href="assets/css/output.css">
+    <!--Link basic css-->
+    <link rel="stylesheet" href="assets/css/unic.css">
+    <!--Box icon cdn-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- jQuery (Google CDN) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <!--header section-->
+    <header class="h-[60px] bg-[#ffffff] pt-[8px] pb-[10.71px] shadow-[0_4px_24px_0_rgba(0,0,0,0.05)] sticky top-0 left-0 z-50">
+        <div class="container mx-auto h-full px-4 sm:px-8 lg:px-[70px] 2xl:px-[135px]">
+            <div class="flex justify-between items-center">
+                <!--logo-->
+                <div class="lg:w-3/12 flex items-center gap-[6.47px]">
+                    <svg class="w-[36px] h-[35px] xl:w-[43px] xl:h-[42px]" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="12.3994" width="29.4283" height="28.8932" fill="#DD3142"/>
+                        <circle cx="24.6013" cy="17.9245" r="15.9245" fill="#DD3142" stroke="white" stroke-width="4"/>
+                    </svg>
+
+                    <div class="flex flex-col items-end">
+                        <h5 class="text-[#000000] text-base xl:text-lg font-bold leading-normal">Plumber Point</h5>
+                        <h6 class="text-[#DD3142] text-[10px] font-bold leading-normal mt-[-1px]">Company</h6>
+                    </div>                      
+                </div>
+
+                <div class="hidden lg:w-9/12 md:flex justify-end items-center gap-[20px] lg:gap-[40px]">
+                    <!--Nav bar-->
+                    <nav class="flex items-center gap-[15px] pt-[6px] lg:gap-0">
+                        <a class="text-[#222222] text-sm font-bold leading-normal pb-[2px] border-b-2 border-transparent mr-[38px] hover:text-[#DD3142] transition duration-300 toggle-btn" href="index.html">Home</a>
+                        <a class="text-[#222222] text-sm font-bold leading-normal pb-[2px] border-b-2 border-transparent mr-[38px] hover:text-[#DD3142] transition duration-300 toggle-btn" href="about.html">About us</a>
+                        <a class="text-[#222222] text-sm font-bold leading-normal pb-[2px] border-b-2 border-transparent mr-[30px] hover:text-[#DD3142] transition duration-300 toggle-btn" href="services.html">Services</a>
+                        <a class="text-[#222222] text-sm font-bold leading-normal pb-[2px] border-b-2 border-transparent mr-[37px] hover:text-[#DD3142] transition duration-300 toggle-btn" href="project.html">Project</a>
+                        <a class="text-[#222222] text-sm font-bold leading-normal pb-[2px] border-b-2 border-transparent mr-[37px] hover:text-[#DD3142] transition duration-300 toggle-btn" href="blogs.html">Blogs</a>
+                        <a class="text-[#222222] text-sm font-bold leading-normal pb-[2px] border-b-2 border-transparent hover:text-[#DD3142] transition duration-300 toggle-btn active" href="contact.html">Contact</a>
+                    </nav>
+
+                    <!--button-->
+                    <button class="w-ful flex items-center justify-center text-[#FFFFFF] text-xs font-bold leading-normal uppercase bg-[#DD3142] pt-[12px] pb-[10px] pl-[9px] pr-[8px] rounded-[5px] cursor-pointer" href="#">Request a call Back</button>
+                </div>
+                
+                <!--menu btn-->
+                <div class="menu-btn md:hidden">
+                    <i class='bx bx-menu text-2xl cursor-pointer'></i>
+                </div>
+
+                <!--menu nav bar for mobile phone-->
+                <div id="navPhone" class="hidden">
+                    <div class="fixed inset-0 w-[100%] bg-[#FFD4D0] px-4 sm:px-8 md:hidden z-50">
+                        <div class="flex justify-between items-center pt-[8px] pb-[10.71px] border-b border-gray-400 mb-6">
+                            <!--logo-->
+                            <div class="flex items-center gap-[6.47px]">
+                                <svg class="w-[36px] h-[35px]" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="12.3994" width="29.4283" height="28.8932" fill="#DD3142"/>
+                                    <circle cx="24.6013" cy="17.9245" r="15.9245" fill="#DD3142" stroke="white" stroke-width="4"/>
+                                </svg>
+            
+                                <div class="flex flex-col items-end">
+                                    <h5 class="text-[#000000] text-base font-bold leading-normal">Plumber Point</h5>
+                                    <h6 class="text-[#DD3142] text-[10px] font-bold leading-normal">Company</h6>
+                                </div>                              
+                            </div>
+
+                            <!--menu x btn-->
+                            <div class="menu-btn" href="#">
+                                <i class='bx bx-x text-2xl cursor-pointer'></i>
+                            </div>
+                        </div>
+            
+                        <!--Nav bar-->
+                        <nav class="flex flex-col gap-[20px] mb-[25px]">
+                            <a class="text-[#222222] text-sm font-bold leading-normal px-4 py-2 border-2  border-transparent hover:text-[#DD3142] transition duration-300 toggle-btn-mobile" href="index.html">Home</a>
+                            <a class="text-[#222222] text-sm font-bold leading-normal px-4 py-2 border-2  border-transparent hover:text-[#DD3142] transition duration-300 toggle-btn-mobile" href="about.html">About us</a>
+                            <a class="text-[#222222] text-sm font-bold leading-normal px-4 py-2 border-2  border-transparent hover:text-[#DD3142] transition duration-300 toggle-btn-mobile" href="services.html">Services</a>
+                            <a class="text-[#222222] text-sm font-bold leading-normal px-4 py-2 border-2  border-transparent hover:text-[#DD3142] transition duration-300 toggle-btn-mobile" href="project.html">Project</a>
+                            <a class="text-[#222222] text-sm font-bold leading-normal px-4 py-2 border-2  border-transparent hover:text-[#DD3142] transition duration-300 toggle-btn-mobile" href="blogs.html">Blogs</a>
+                            <a class="text-[#222222] text-sm font-bold leading-normal px-4 py-2 border-2  border-transparent hover:text-[#DD3142] transition duration-300 toggle-btn-mobile active_mobile" href="contact.html">Contact</a>
+                        </nav>
+        
+                        <!--button-->
+                        <button class="w-full text-[#FFFFFF] text-xs text-center font-bold leading-normal uppercase bg-[#DD3142] pt-[12px] pb-[10px] pl-[9px] pr-[8px] rounded-[5px] cursor-pointer" href="#">Request a call Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Hero section-->
+    <section class="bg-[url('../images/contact-bg.png')] bg-cover bg-center bg-no-repeat]">
+        <div class="bg-[linear-gradient(90deg,_#DD3142_0.03%,_rgba(196,196,196,0)_141.61%)]">
+            <div class="container mx-auto h-full px-4 sm:px-8 lg:px-[70px] xl:px-[135px] py-[50px] lg:py-[65px] xl:pt-[101px] xl:pb-[70px]">
+                <div class="sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[37%] flex flex-col justify-center gap-[15px]">
+                    <h1 class="text-[#EEFF06] text-[44px] font-black leading-normal uppercase">Contact us</h1>
+<<<<<<< HEAD
+                    <p class="text-[#FFFFFF] text-sm font-normal leading-normal">Need Expert Plumbing Help? Get in Touch with Plumber Point Today! Our team is ready to solve your plumbing problems with fast, reliable, and affordable service across the city. Contact us now for a free consultation or to schedule an emergency visit!</p>
+=======
+                    <p class="text-[#FFFFFF] text-sm font-normal leading-normal">Plumber Points is always ready to serve the plumbing and piping industry. Plumber Points has been the city's trusted contact team ever since the 1990s, when a local plumber fixed a line and cleared it to make the service system work.</p>
+>>>>>>> 0fb8564 (All files commited)
+                </div>
+            </div>
+        </div>               
+    </section>
+
+    <!--Get in touch section-->
+    <section class="bg-[#ffffff] pt-[63px] pb-[60px]">
+        <div class="container mx-auto h-full px-[50px] lg:px-[120px] xl:pl-[189px] xl:pr-[185px]">
+            <h2 class="text-[#000000] text-[32px] md:text-[40px] text-center font-bold leading-normal mb-[33px]">Get in touch</h2>
+
+            <form class="font-rubik" action="">
+                <div class="flex flex-wrap md:flex-nowrap items-center gap-[39.18px] mb-[52px]">
+                    <input type="text" name="full_name" id="full_name" placeholder="Full name" class="w-full md:w-2/4 placeholder:text-[#000000] placeholder:text-base placeholder:font-normal placeholder:leading-normal focus:outline-none pb-[12px] border-b border-[#707070]">
+
+                    <input type="email" name="email_address" id="email_address" placeholder="Email address" required  class="w-full md:w-2/4 placeholder:text-[#000000] placeholder:text-base placeholder:font-normal placeholder:leading-normal focus:outline-none pb-[12px] border-b border-[#707070]">
+                </div>
+
+                <div class="flex flex-wrap md:flex-nowrap items-center gap-[39.18px] mb-[52px]">
+                    <input type="number" name="Contact_number" id="Contact_number" placeholder="Contact number" class="w-full md:w-2/4 placeholder:text-[#000000] placeholder:text-base placeholder:font-normal placeholder:leading-normal focus:outline-none pb-[12px] border-b border-[#707070]">
+
+                    <input type="text" name="Subject" id="Subject" placeholder="Subject" class="w-full md:w-2/4 placeholder:text-[#000000] placeholder:text-base placeholder:font-normal placeholder:leading-normal focus:outline-none pb-[13px] border-b border-[#707070]">
+                </div>
+
+                <div class="flex flex-wrap md:flex-nowrap items-center mb-[33px]">
+                    <input type="text" name="Description" id="Description" placeholder="Description" class="w-4/4 placeholder:text-[#000000] placeholder:text-base placeholder:font-normal placeholder:leading-normal focus:outline-none pb-[12px] border-b border-[#707070]">
+                </div>
+
+                <div class="flex items-center justify-end">
+                    <button type="submit" class="text-[#FFFFFF] text-base md:text-xl font-roboto font-bold leading-normal uppercase bg-[#DD3142] px-[24px] pt-[16px] pb-[13px] rounded-[30px]">Send A MEssage</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+   <!--contact us section-->
+   <section class="bg-[#F9F9F9] pt-[33px] pb-[30px]">
+    <div class="container mx-auto h-full px-4 sm:px-8 lg:px-[70px] xl:px-[135px]">
+        <div class="flex flex-wrap md:flex-nowrap items-center gap-[30px] lg:gap-[60px] 2xl:gap-[131px]">
+            <div class="w-full md:w-3/8 2xl:max-w-[377px] pt-[17px]">
+                <h5 class="text-[#DD3142] text-[18px] font-bold leading-normal mb-[7px]">Contact Us</h5>
+                <p class="text-[#000000] text-sm font-normal leading-normal mb-[37px]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+                <h6 class="text-[#DD3142] text-sm font-medium leading-normal mb-[4px]">Business hours:</h6>
+                <p class="text-[#000000] text-sm font-normal leading-normal mb-[24px]">Monday to Saturday 9:30 am - 4:30 pm</p>
+
+                <h6 class="text-[#DD3142] text-sm font-medium leading-normal mb-[5px]">Address:</h6>
+                <p class="text-[#000000] text-sm font-normal leading-normal mb-[23px]">A-67 south Ex Delhi-11002</p>
+
+                <h6 class="text-[#DD3142] text-sm font-medium leading-normal mb-[5px]">Email:</h6>
+                <p class="text-[#000000] text-sm font-normal leading-normal mb-[23px]">abc@abc.com</p>
+
+                <h6 class="text-[#DD3142] text-sm font-medium leading-normal mb-[5px]">Phone:</h6>
+                <p class="text-[#000000] text-sm font-normal leading-normal mb-[23px]">1800 - 458495-4455</p>
+            </div>
+
+            <div class="w-full md:w-5/8 2xl:max-w-[661px]">
+                <iframe class="w-full max-h-[354px]" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1835263.5869524146!2d80.50703407735304!3d26.049937367473973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1744950142606!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+   </section>
+
+
+    <!--our recent blog-->
+    <section class="bg-[#ffffff] pt-[60px] pb-[86px]">
+        <div class="container mx-auto h-full px-4 sm:px-8 lg:px-[70px] 2xl:px-[135px]">
+            <h2 class="text-[#0E0E0E] text-[30px] font-medium leading-normal uppercase mb-[43px]">our recent blogs</h2>
+
+            <div class="flex flex-wrap md:flex-nowrap justify-between 2xl:justify-start gap-[30px] lg:gap-[82px] 2xl:gap-0">
+                <!--box-1-->
+                <div class="sm:w-5/12 md:w-4/12 2xl:max-w-[332px] 2xl:mr-[89px]">
+                    <img class="w-[329px] xl:max-w-[332px] h-[132px] object-cover" src="assets/images/our-blog-1.png" alt="">
+
+                    <h5 class="text-[#000000] text-lg lg:text-xl font-normal leading-normal mt-[18px] mb-[12px]">Discover smart plumbing tips, tricks, and latest service updates.</h5>
+                    <p class="text-[#000000] text-xs font-normal leading-normal pr-[2px]">Don’t wrestle with rig assembly and hot, noisy miners at home. We have the fastest bitcoin mining hardware running for you...</p>
+                </div>
+
+                <!--box-2-->
+                <div class="sm:w-5/12 md:w-4/12 2xl:max-w-[330px] 2xl:mr-[90px]">
+                    <img class="w-[329px] xl:max-w-[330px] h-[131.5px] object-cover" src="assets/images/our-blog-2.png" alt="">
+
+                    <h5 class="text-[#000000] text-lg lg:text-xl font-normal leading-normal mt-[18px] mb-[10px]">Get expert advice on plumbing care and maintenance today.</h5>
+                    <p class="text-[#000000] text-xs font-normal leading-normal pr-[2px]">Fixing leaks, managing water pressure, or preventing clogs — our team shares trusted solutions to keep your plumbing running smoothly every season...</p>
+                </div>
+
+                <!--box-3-->
+                <div class="sm:w-5/12 md:w-4/12 2xl:max-w-[329px]">
+                    <img class="w-[329px] xl:max-w-[329px] h-[132px] object-cover" src="assets/images/our-blog-3.1.png" alt="">
+
+                    <h5 class="text-[#000000] text-lg lg:text-xl font-normal leading-normal mt-[18px] mb-[10px]">Your go-to source for plumbing insights and solutions.</h5>
+                    <p class="text-[#000000] text-xs font-normal leading-normal pr-[2px]">Say goodbye to dripping taps and blocked drains — explore expert blog posts that help you save money and protect your home from water damage...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <footer class="bg-[#000000]">
+        <div class="border-b border-white">       
+            <div class="container mx-auto h-full px-4 sm:px-8 lg:px-[70px] 2xl:pl-[138px] 2xl:pr-[134px] pt-[33px] pb-[24px]">
+                <div class="flex flex-wrap lg:flex-nowrap justify-between gap-[20px] lg:gap-[40px] 2xl:gap-0">
+                    <!--1st column-->
+                    <div class="w-full lg:w-4/12 2xl:max-w-[362px] 2xl:mr-[114px] mt-[-4px]">
+                        <!--logo-->
+                        <div class="flex items-center gap-[6.47px] mb-[27.71px]">
+                            <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="12.3994" width="29.4283" height="28.8932" fill="#DD3142"/>
+                                <circle cx="24.6013" cy="17.9245" r="15.9245" fill="#DD3142" stroke="black" stroke-width="4"/>
+                            </svg>
+                                
+                            <div class="flex flex-col items-end">
+                                <h5 class="text-[#FFFFFF] text-lg font-bold leading-normal">Plumber Point</h5>
+                                <h6 class="text-[#DD3142] text-[10px] font-bold leading-normal ">Company</h6>
+                            </div>                      
+                        </div>
+
+<<<<<<< HEAD
+                        <p class="text-[#FFFFFF] text-xs font-normal leading-normal mb-[13px]">Plumber Point is your trusted name in residential and commercial plumbing. We’ve been delivering expert services since day one, ensuring comfort and reliability in every drop that flows through your pipes.</p>
+=======
+                        <p class="text-[#FFFFFF] text-xs font-normal leading-normal mb-[14px]">Lore Issue is simply dummy text of the printing and typesetting industry. Lore Issue has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+>>>>>>> 0fb8564 (All files commited)
+
+                        <!--Social links-->
+                        <div class="flex items-center justify-between w-[72px]">
+                            <!--facebook-->
+                            <a href="#">
+                                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.90459 1.9925H6V0.0845C5.81102 0.0585 5.16107 0 4.40413 0C2.82476 0 1.74286 0.9935 1.74286 2.8195V4.5H0V6.633H1.74286V12H3.87968V6.6335H5.55204L5.81752 4.5005H3.87918V3.031C3.87968 2.4145 4.04566 1.9925 4.90459 1.9925Z" fill="#DD3142"/>
+                                </svg>                             
+                            </a>
+
+                            <!--Google-->
+                            <a href="#">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 4.8V7.2H9.3948C8.8992 8.5968 7.5648 9.6 6 9.6C4.0152 9.6 2.4 7.9848 2.4 6C2.4 4.0152 4.0152 2.4 6 2.4C6.8604 2.4 7.6884 2.7084 8.3316 3.2688L9.9084 1.4592C8.8284 0.5184 7.4412 0 6 0C2.6916 0 0 2.6916 0 6C0 9.3084 2.6916 12 6 12C9.3084 12 12 9.3084 12 6V4.8H6Z" fill="#DD3142"/>
+                                </svg>                                                             
+                            </a>
+
+                            <!--Tweeter-->
+                            <a href="#">
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 1.42062C13.4794 1.66154 12.9246 1.82123 12.3462 1.89877C12.9412 1.524 13.3954 0.935077 13.6089 0.225231C13.0541 0.574154 12.4416 0.820615 11.7889 0.958154C11.2621 0.366462 10.5114 0 9.69238 0C8.10337 0 6.82412 1.36062 6.82412 3.02862C6.82412 3.26862 6.84338 3.49938 6.89062 3.71908C4.5045 3.59631 2.39313 2.38985 0.97475 0.552C0.727125 1.00523 0.581875 1.524 0.581875 2.08246C0.581875 3.13108 1.09375 4.06062 1.85675 4.59877C1.39562 4.58954 0.94325 4.44831 0.56 4.22585C0.56 4.23508 0.56 4.24708 0.56 4.25908C0.56 5.73046 1.55487 6.95262 2.8595 7.23415C2.62587 7.30154 2.37125 7.33385 2.107 7.33385C1.92325 7.33385 1.73775 7.32277 1.56362 7.28215C1.9355 8.48123 2.99075 9.36277 4.2455 9.39138C3.269 10.1972 2.02912 10.6828 0.686875 10.6828C0.4515 10.6828 0.22575 10.6717 0 10.6412C1.27137 11.5062 2.77813 12 4.403 12C9.6845 12 12.572 7.38462 12.572 3.384C12.572 3.25015 12.5676 3.12092 12.5615 2.99262C13.1311 2.56615 13.6097 2.03354 14 1.42062Z" fill="#DD3142"/>
+                                </svg>                                                             
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--2st column-->
+                    <div class="w-5/12 sm:w-3/12 lg:w-3/12 2xl:max-w-[149px] 2xl:mr-[78px]">
+                        <h4 class="text-[#DD3142] text-base font-bold leading-normal uppercase mb-[40px]">Our Services</h4>
+
+                        <div class="flex flex-col gap-[15px]">
+                            <a class="text-[#FFFFFF] text-xs font-normal leading-normal" href="#">Plumber Service</a>
+                            <a class="text-[#FFFFFF] text-xs font-normal leading-normal" href="#">Bathroom Plumbing Service</a>
+                            <a class="text-[#FFFFFF] text-xs font-normal leading-normal" href="#">Kitchen Plumbing Service</a>
+                            <a class="text-[#FFFFFF] text-xs font-normal leading-normal" href="#">Roof Plumbing Service</a>
+                            <a class="text-[#FFFFFF] text-xs font-normal leading-normal" href="#">Bathroom Plumbing Service</a>
+                            <a class="text-[#FFFFFF] text-xs font-normal leading-normal" href="#">Kitchen Plumbing Service</a>
+                        </div>
+                    </div>
+
+                    <!--3st column-->
+                    <div class="w-5/12 sm:w-3/12 lg:w-2/12 2xl:max-w-[151px] 2xl:mr-[55px]">
+                        <h4 class="text-[#DD3142] text-base font-bold leading-normal uppercase mb-[42.812px]">Contact</h4>                   
+                        <p class="flex flex-col leading-normal mb-[36px]">
+                            <span class="text-[#FFFFFF] text-sm font-normal">1800-9938-2839</span>
+                            <span class="text-[#FFFFFF] text-xs font-normal mt-[-4px]">support@plumberpoint.com</span>
+                        </p>
+                        <p class="flex flex-col leading-normal mb-[33px]">
+                            <span class="text-[#FFFFFF] text-sm font-normal">A-507 Mandoli</span>
+                            <span class="text-[#FFFFFF] text-xs font-normal mt-[-4px]">New Delhi, India</span>
+                        </p>
+                        <p class="flex flex-col leading-normal">
+                            <span class="text-[#FFFFFF] text-sm font-normal">Mon-Sat 9.00-15:00</span>
+                            <span class="text-[#FFFFFF] text-xs font-normal mt-[-4px]">Sunday CLOSED</span>
+                        </p>
+                    </div>
+
+                    <!--4st column-->
+                    <div class="w-full sm:w-5/12 lg:w-3/12 2xl:max-w-[260px]">
+                        <h4 class="text-[#DD3142] text-base font-bold leading-normal uppercase mb-[20px]">Recent Post</h4>
+
+                        <div class="flex items-center gap-[12px] mb-[15px]">
+                            <div>
+                                <img class="max-w-[68px] h-[50px] object-cover" src="assets/images/rectangle1.png" alt="">
+                            </div>
+                            
+                            <div>
+                                <h6 class="text-[#FFFFFF] text-[10px] font-medium leading-normal mb-[5px]">Sewer Line Repair</h6>
+                                <p class="text-[#FFFFFF] text-[8px] font-normal leading-[10.68px]">Water Leak? We’re ready 24/7. Plumbing checks and drain cleaning anytime. Plumber Point has been the solution.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-[12px] mb-[23px]">
+                            <div>
+                                <img class="max-w-[68px] h-[50px] object-cover" src="assets/images/rectangle1.png" alt="">
+                            </div>
+                            
+                            <div>
+                                <h6 class="text-[#FFFFFF] text-[10px] font-medium leading-normal mb-[5px]">Sewer Line Repair</h6>
+                                <p class="text-[#FFFFFF] text-[8px] font-normal leading-[10.68px]">Pipe Trouble? . Call anytime today . We fix leaks and systems completely. Plumber Point has been the expert'.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-[12px]">
+                            <div>
+                                <img class="max-w-[68px] h-[50px] object-cover" src="assets/images/rectangle1.png" alt="">
+                            </div>
+                            
+                            <div>
+                                <h6 class="text-[#FFFFFF] text-[10px] font-medium leading-normal mb-[5px]">Sewer Line Repair</h6>
+                                <p class="text-[#FFFFFF] text-[8px] font-normal leading-[10.68px]">Drain Backup . We’re here to help . Fast plumbing and repair on-demand. Plumber Point has been the support'.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>  
+        
+        <!--Copyright -->
+        <div class="container mx-auto h-full px-[70px] xl:pl-[136px] 2xl:pr-[135px]">
+            <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between gap-y-2 pt-[11px] pb-[12px] text-white">
+                <p class="text-[#DD3142] text-[10px] font-normal leading-normal">©Copyright 2020 Techwero Systems.</p>
+    
+                <div class="flex items-center gap-[38px]">
+                    <a class="text-[#DD3142] text-[10px] font-normal leading-normal" href="#">Term of Services</a>
+                    <a class="text-[#DD3142] text-[10px] font-normal leading-normal" href="#">Privacy & policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
